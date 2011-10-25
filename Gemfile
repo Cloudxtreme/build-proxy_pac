@@ -6,3 +6,5 @@ gemspec
 platforms :ruby do
   gem "rb-inotify"
 end
+
+#gem "thor", :git => "https://github.com/wycats/thor.git"

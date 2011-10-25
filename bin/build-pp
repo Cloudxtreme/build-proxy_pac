@@ -1,13 +1,17 @@
 #!/usr/bin/env ruby
 
 require 'thor'
+require 'fileutils'
 
 module BuildPP
   class Runner < Thor
-#    desc "generate","Generate the proxy.pac based on template. If none is give, it will use the default one"
-#    def generate
-#      0 
-#    end
+    desc "generate","Generate the proxy.pac based on template. If none is give, it will use the default one"
+    def generate
+      pac_file = 'proxy.pac'
+
+      puts "Generated proxy.pac. Stored at #{pac_file}"
+      File.open(pac_file, 'w')
+    end
   end
 end
 
