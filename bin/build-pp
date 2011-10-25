@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'thor'
+
+module BuildPP
+  class Runner < Thor
+#    desc "generate","Generate the proxy.pac based on template. If none is give, it will use the default one"
+#    def generate
+#      0 
+#    end
+  end
+end
+
+BuildPP::Runner.start
